@@ -539,7 +539,7 @@ template {
 
 .work__item {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 10px;
   width: 285px;
   display: flex;
   flex-direction: column;
@@ -1014,6 +1014,55 @@ template {
     transform: scale(1.2) rotateX(-360deg);
   }
 }
+.plan__section {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 168px;
+  width: 1280px;
+  background-image: url(../../images/Bitmap2.png);
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
+.planhero__section {
+  margin: 0;
+  padding: 0;
+}
+
+.imgbg__section {
+  margin: 0 auto;
+  padding: 100px 85px;
+  padding-bottom: 200px;
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url(../../images/plan.png);
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
+.plan_box {
+  padding-top: 0;
+  padding-bottom: 67px;
+  width: 791px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../../images/path.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 0px) calc(50% - 33px);
+}
+
+.color {
+  color: #fff;
+}
+
+.color_opacity {
+  color: #fff;
+  opacity: 0.8;
+}
+
 .site__footer {
   margin: 0;
   padding: 0;
