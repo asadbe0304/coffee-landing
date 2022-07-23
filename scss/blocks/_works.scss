@@ -90,6 +90,7 @@
 .work__link {
     @include btn;
     background: #0E8784;
+    transition: all 0.5s;
 }
 .work__link:hover{    
     background: #66D2CF;
@@ -99,12 +100,11 @@
 }
 
 
-.number:hover {
+.work__item:hover {
     animation: rotate__up 0.65s linear both;
     color: #0E8784;
 }
-
-@-webkit-keyframes rotate__up{
+@keyframes rotate__up{
     0% {
         transform: scale(1.1) rotateX(0);
     }
@@ -114,20 +114,6 @@
     }
 
     100% {
-        transform: scale(1.5) rotateX(-360deg);
-    }
-}
-
-@keyframes rotate__up {
-    0% {
-        transform: scale(1.1) rotateX(0);
-    }
-
-    50% {
-        transform: scale(1.3) rotateX(-180deg);
-    }
-
-    100% {
-        transform: scale(1.5) rotateX(-360deg);
+        transform: scale(1.3) rotateX(-360deg);
     }
 }

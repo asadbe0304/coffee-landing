@@ -48,6 +48,11 @@
     letter-spacing: 0.923077px;
     text-transform: uppercase;
     color: #83888F;
+    transition: all 0.5s;
+}
+
+.footer__item .footer__link:hover {
+    color: #fff;
 }
 
 .footer__right {
@@ -62,7 +67,7 @@
 //     animation-name: rotateIn; 
 // }
 .icon path:hover {
-    fill: crimson;
+    fill: #0E8784;
     cursor: pointer;
 }
 
