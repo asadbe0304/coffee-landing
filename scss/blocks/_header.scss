@@ -1,0 +1,33 @@
+.site__header {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin: 0;
+    padding: 44px 0;
+    width: 1280px;
+    @include center;
+}
+
+.header__list {
+    margin: 0;
+    padding: 0;
+    @include flex_list;
+}
+
+.header__item+.header__item {
+    margin-left: 33px;
+}
+
+.header__item a {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+    text-decoration: none;
+}

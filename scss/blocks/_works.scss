@@ -1,0 +1,133 @@
+.site__works {
+    margin: 0;
+    padding: 0;
+}
+
+.work__section {
+    margin:  0 auto;
+    padding: 0 85px;
+    padding-bottom: 200px;
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.work__title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+}
+
+.work__imgbox {
+    padding: 80px 0 67px 0;
+    width: 791px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../../images/path.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 0px) calc(50% + 7px);
+}
+
+.work__list {
+    margin: 0 0 64px 0;
+    padding: 0;
+    @include center;
+    width: 1045px;
+    list-style-type: none;
+}
+
+.number {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FDD6BA;
+    transition: all 1s ease-in-out;
+}
+
+.work__item {
+    margin: 0;
+    padding: 0;
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.work__item+.work__item{
+    margin-left: 95px;
+}
+.work__item--title {
+    margin: 42px 0 38px 0;
+    padding: 0;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+}
+
+.work__item--text {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
+
+.work__link {
+    @include btn;
+    background: #0E8784;
+}
+.work__link:hover{    
+    background: #66D2CF;
+}
+.work__link:active{    
+    background: #E2DEDB;
+}
+
+
+.number:hover {
+    animation: rotate__up 0.65s linear both;
+    color: #0E8784;
+}
+
+@-webkit-keyframes rotate__up{
+    0% {
+        transform: scale(1.1) rotateX(0);
+    }
+
+    50% {
+        transform: scale(1.2) rotateX(-180deg);
+    }
+
+    100% {
+        transform: scale(1.5) rotateX(-360deg);
+    }
+}
+
+@keyframes rotate__up {
+    0% {
+        transform: scale(1.1) rotateX(0);
+    }
+
+    50% {
+        transform: scale(1.3) rotateX(-180deg);
+    }
+
+    100% {
+        transform: scale(1.5) rotateX(-360deg);
+    }
+}

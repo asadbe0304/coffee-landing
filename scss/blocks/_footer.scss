@@ -1,0 +1,109 @@
+.site__footer {
+    margin: 0;
+    padding: 0;
+    background: #2C343E;
+}
+
+.footer__section {
+    margin: 0 85px;
+    padding: 48px 0px;
+    max-width: 1110px;
+    @include center;
+}
+
+.footer__logo--link {
+    text-decoration: none;
+}
+
+.footer__left {
+    margin: 0;
+    padding: 0;
+    width: 620px;
+    @include center;
+}
+
+.footer__list {
+    margin: 0;
+    padding: 0;
+    @include center;
+    list-style: none;
+}
+
+.footer__item .footer__link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.footer__item+.footer__item {
+    margin-left: 33px;
+}
+
+.footer__link {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+}
+
+.footer__right {
+    margin-left: 368px;
+    @include center;
+    width: 120px;
+
+}
+
+// .icon{
+//     animation: both;
+//     animation-name: rotateIn; 
+// }
+.icon path:hover {
+    fill: crimson;
+}
+
+
+
+// .number:hover {
+//     -webkit-animation-name: rotateIn;
+//     animation-name: rotateIn;
+//     -webkit-animation-duration: 1s;
+//     animation-duration: 1s;
+//     -webkit-animation-fill-mode: both;
+//     animation-fill-mode: both;
+//     }
+//     @-webkit-keyframes rotateIn {
+//     0% {
+//     -webkit-transform-origin: center;
+//     transform-origin: center;
+//     -webkit-transform: rotate3d(0, 0, 1, -200deg);
+//     transform: rotate3d(0, 0, 1, -200deg);
+//     opacity: 0;
+//     }
+//     100% {
+//     -webkit-transform-origin: center;
+//     transform-origin: center;
+//     -webkit-transform: none;
+//     transform: none;
+//     opacity: 1;
+//     }
+//     }
+//     @keyframes rotateIn {
+//     0% {
+//     -webkit-transform-origin: center;
+//     transform-origin: center;
+//     -webkit-transform: rotate3d(0, 0, 1, -200deg);
+//     transform: rotate3d(0, 0, 1, -200deg);
+//     opacity: 0;
+//     }
+//     100% {
+//     -webkit-transform-origin: center;
+//     transform-origin: center;
+//     -webkit-transform: none;
+//     transform: none;
+//     opacity: 1;
+//     }
+//     } 
