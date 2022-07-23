@@ -873,4 +873,5 @@ template {
 
 .icon path:hover {
   fill: crimson;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
