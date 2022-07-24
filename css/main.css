@@ -1064,6 +1064,67 @@ template {
   opacity: 0.8;
 }
 
+.option__section {
+  margin: 0;
+  padding: 0 85px;
+}
+
+.option__content {
+  margin: 0;
+  padding: 0px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__left--list {
+  margin: 0 125px 0 0;
+  padding: 0;
+  width: 255px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.left__list--item {
+  width: 255px;
+  border-bottom: 1px solid #83888f;
+  opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left__list--item .item__btn {
+  padding: 24px 0;
+  width: 255px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.item__btn {
+  background-color: transparent;
+  border: none;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333D4B;
+  opacity: 0.5;
+}
+
+span {
+  margin-left: 0;
+  margin-right: 28px;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #0E8784;
+}
+
 .site__footer {
   margin: 0;
   padding: 0;
