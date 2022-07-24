@@ -107,6 +107,7 @@
 .work__item:hover {
     animation: rotate__up 0.65s linear both;
     color: #0E8784;
+    cursor: pointer;
 }
 
 @keyframes rotate__up {
