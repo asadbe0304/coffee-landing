@@ -16,10 +16,13 @@
     @include flex_list;
 }
 
-.menu__img {
+.hamburger {
     display: none;
 }
-
+.menu{
+    display: none;
+    text-decoration: none;
+}
 .header__item+.header__item {
     margin-left: 33px;
 }
@@ -35,7 +38,16 @@
     color: #83888F;
     text-decoration: none;
 }
-
+@media screen and(max-width:1114px) {
+    .header__list{
+        padding: 0;
+        margin: 0;
+        width: 40%;
+    }
+    .header__item + .header__item{
+        margin-left: 0px;
+    }
+}
 @media screen and (max-width:710px) {
     .header {
         padding: 54px 0;
@@ -51,7 +63,7 @@
         width: 163px;
         height: 18px;
     }
-    .menu__img {
+    .hamburger {
         display: block;
     }
 
