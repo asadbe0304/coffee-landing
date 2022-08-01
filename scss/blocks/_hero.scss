@@ -7,17 +7,19 @@
 
 .hero__section {
     margin: 0 0 116px 0;
-    padding:  0;
-    width: 1280px;
+    padding: 117px 0px 116px 85px;
+    max-width: 1320px;
     background-image: url(../../images/Bitmap.png);
     background-repeat: no-repeat;
     background-position: cover;
+    // background-size: 100%;
     border-radius: 8px;
 }
 
 .hero__content {
     margin: 0;
-    padding: 117px 702px 116px 85px;
+    padding: 0;
+    max-width: 493px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -56,4 +58,75 @@
 
 .hero__link:active {
     background: #E2DEDB;
+}
+
+@media screen and (max-width:1020px) {
+    .hero__section {
+        max-width: 1280px;
+        padding: 104px 0 82px 58px;
+        background-image: url(../../images/herotab.png);
+        background-position: cover;
+        background-size: 100%;
+    }
+}
+
+@media screen and (max-width:910px) {
+    .hero__content {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero__title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .hero__text {
+        margin: 24px 50px 40px 0;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media screen and(max-width:675px) {
+    .hero__section {
+        max-width: 100%;
+        height: auto;
+        background-image: url(../../images/mobilehero.png);
+        background-size: 100%;
+    }
+    .hero__content {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:580px) {
+.hero__section{
+    padding: 100px 24px;
+}
+  
+
+    .hero__title {
+        text-align: center;
+    }
+
+    .hero__text {
+        margin: 24px 0 39px 0;
+    }
+}
+@media screen and(max-width:379px) {
+    .hero__section{
+        max-width: 100%;
+        padding: 90px 20px 40px 20px;
+        }
+    .hero__title{
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .hero__text{
+        font-size: 12px;
+        line-height: 25px;
+    }
 }
