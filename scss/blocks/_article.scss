@@ -8,10 +8,12 @@
     position: relative;
     margin: 0;
     padding: 90px 85px 296px 85px;
-    width: 1280px;
+    max-width: 1320px;
     background-image: url(../../images/product.png);
     background-repeat: no-repeat;
-    background-position: cover;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .article__left {
