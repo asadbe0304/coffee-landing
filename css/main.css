@@ -1405,30 +1405,40 @@ template {
 
 .article__content {
   position: relative;
-  margin: 0;
+  margin: 190px 0 0 0;
   padding: 90px 85px 296px 85px;
   max-width: 1320px;
   background-image: url(../../images/product.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   display: flex;
   justify-content: space-between;
 }
 
 .article__left {
   margin: 0;
-  padding: 0 12px 0 0;
-  width: 550px;
+  padding: 0;
+  width: 540px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 }
 
+.article__wrap {
+  max-width: 445px;
+}
+
 .article__img {
+  max-width: 573px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+  z-index: 2;
   position: absolute;
-  left: 770px;
-  top: -90px;
+  top: -85px;
+  right: 60px;
+  margin: 0 auto;
   border-radius: 8px;
 }
 
@@ -1442,7 +1452,6 @@ template {
 
 .article__desc {
   margin: 0;
-  margin-top: 32px;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -1450,16 +1459,107 @@ template {
   color: #FEFCF7;
 }
 
+@media screen and (max-width: 1240px) {
+  .article__left {
+    width: 50%;
+  }
+  .article__content {
+    padding-top: 40px;
+  }
+  .article__desc {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .article__content {
+    margin: 200px 0 150px 0;
+    max-width: 100%;
+    padding: 190px 0 67px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../images/abitubg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 8px;
+  }
+  .article__left {
+    width: 85%;
+    align-items: center;
+  }
+  .article__top--title {
+    text-align: center;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .article__desc {
+    text-align: center;
+  }
+  .article__img {
+    top: -165px;
+    left: 0;
+    right: 0;
+    width: 80% !important;
+    height: 320px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .article__content {
+    background-image: url(../../images/maskabout.png);
+    background-size: 100%;
+  }
+  .article__left {
+    width: 80%;
+  }
+  .article__top--title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .article__desc {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .article__content {
+    padding-bottom: 150px;
+    margin-bottom: 0;
+  }
+  .article__left {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .article__content {
+    margin-top: 0;
+    padding-top: 280px;
+    padding-bottom: 190px;
+  }
+  .article__img {
+    top: -50px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .article__content {
+    margin-top: 0;
+    padding-top: 300px;
+    padding-bottom: 320px;
+  }
+  .article__img {
+    top: -20px;
+  }
+}
 .site__headquarts {
   margin: 0;
   padding: 0;
 }
 
 .headquarts {
-  margin: 0;
-  padding: 0 85px;
+  margin: 0 auto;
+  padding: 0;
   padding-bottom: 168px;
-  width: 1045px;
+  max-width: 1045px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1479,7 +1579,7 @@ template {
 .headquart__list {
   margin: 0;
   padding: 72px 0 0 0;
-  width: 1045px;
+  max-width: 1045px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1547,6 +1647,48 @@ template {
   }
   100% {
     transform: scale(1.2) rotateX(-360deg);
+  }
+}
+@media screen and (max-width: 1180px) {
+  .headquarts {
+    width: 80%;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .our__title {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .headquart__list {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .haedquart__item + .haedquart__item {
+    margin-left: 0;
+  }
+  .haedquart__item {
+    max-width: 272px;
+    align-items: center;
+    text-align: center;
+  }
+  .item__caption {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .item__address {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .item__caption {
+    font-size: 28px;
+    line-height: 36px;
   }
 }
 .plan__section {
