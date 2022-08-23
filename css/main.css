@@ -1954,8 +1954,8 @@ blockquote {
   list-style: none;
   text-align: center;
   background: linear-gradient(180deg, #FEFCF7 55.94% 0%, rgba(254, 252, 247, 0.504981));
-  -webkit-animation: roll-in 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
-          animation: roll-in 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+  -webkit-animation: roll-in 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
+          animation: roll-in 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 .modal__item > a {
