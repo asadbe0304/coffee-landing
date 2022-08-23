@@ -1,6 +1,8 @@
-var elMenu = document.querySelector(".hamburger")
-var elModal = document.querySelector(".modal")
-elmenu.addEventListener("click", function(){
-    elmodal.classList.toggle("active")
-})
-console.log("Menu")
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}

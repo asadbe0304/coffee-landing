@@ -86,29 +86,6 @@ span {
     position: relative;
     display: inline-block;
 }
-
-input[type=checkbox] {
-    display: none;
-}
-
-label {
-    margin-bottom: 58px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 790px;
-    background-color: transparent;
-    cursor: pointer;
-    user-select: none;
-    font-family: 'Fraunces';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 48px;
-    color: #83888F;
-}
-
 .drop__list {
     margin: 0;
     padding: 0;
@@ -157,20 +134,6 @@ label {
     line-height: 26px;
     color: #333D4B;
 }
-
-input[type=checkbox] {
-    display: none;
-}
-
-input[type=checkbox]:checked~.drop__imgb {
-    background-color: transparent;
-    transform: rotateX(180deg);
-}
-
-input[type=checkbox]:checked~.drop__list {
-    display: flex;
-}
-
 .bottom__plan {
     position: relative;
     margin: 0 0 150px 0;
