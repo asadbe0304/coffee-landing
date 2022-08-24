@@ -573,7 +573,7 @@ template {
 }
 @media screen and (max-width: 580px) {
   .hero__section {
-    padding: 100px 24px;
+    padding: 85px 24px;
   }
   .hero__title {
     text-align: center;
@@ -585,13 +585,14 @@ template {
 @media screen and (max-width: 379px) {
   .hero__section {
     max-width: 100%;
-    padding: 90px 20px 40px 20px;
+    padding: 90px 20px 20px 20px;
   }
   .hero__title {
     font-size: 38px;
     line-height: 38px;
   }
   .hero__text {
+    margin-bottom: 20px;
     font-size: 12px;
     line-height: 25px;
   }
@@ -1939,7 +1940,7 @@ blockquote {
   background-color: #e2dedb;
 }
 
-.modal {
+.wrapper {
   position: fixed;
   top: 80px;
   left: 0;
@@ -1956,6 +1957,19 @@ blockquote {
   background: linear-gradient(180deg, #FEFCF7 55.94% 0%, rgba(254, 252, 247, 0.504981));
   -webkit-animation: roll-in 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
           animation: roll-in 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.modal {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
 }
 
 .modal__item > a {

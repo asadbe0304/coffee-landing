@@ -1,4 +1,4 @@
-.modal {
+.wrapper {
     position: fixed;
     top: 80px;
     left: 0;
@@ -17,7 +17,17 @@
 
 
 }
-
+.modal{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.closebtn{
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
 .modal__item>a {
     font-family: 'Fraunces';
     font-style: normal;
