@@ -1,10 +1,11 @@
-.planhero__section{
-   margin: 0;
-   padding: 0;
+.planhero__section {
+    margin: 0;
+    padding: 0 0 150px 0;
 }
+
 .imgbg__section {
-    margin:  0 auto;
-    padding: 100px 85px;
+    margin: 0 auto;
+    padding: 100px 150px 100px 85px;
     padding-bottom: 200px;
     max-width: 1320px;
     display: flex;
@@ -15,10 +16,21 @@
     background-size: cover;
     border-radius: 8px;
 }
-.plan_box{
+
+.plan__list {
+    padding: 0;
+    align-items: flex-start;
+
+}
+
+.number {
+    margin: 0;
+}
+
+.plan_box {
     padding-top: 0;
     padding-bottom: 67px;
-    width: 791px;
+    width: 815px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,10 +38,17 @@
     background-repeat: no-repeat;
     background-position: calc(50% + 0px) calc(50% - 33px);
 }
-.color{
-    color:#fff;
+
+.plan_item {
+    padding: 0;
+    width: 285px;
 }
-.color_opacity{
-    color:#fff;
+
+.color {
+    color: #fff;
+}
+
+.color_opacity {
+    color: #fff;
     opacity: 0.8;
 }

@@ -27,7 +27,7 @@
 .headquart__list {
     margin: 0;
     padding: 72px 0 0 0;
-    max-width: 1045px;
+    width: 1045px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -101,9 +101,15 @@
 
 @media screen and(max-width:1180px) {
     .headquarts {
-        width: 80%;
+        width: 100%;
         flex-wrap: wrap;
     }
+    // .headquart__list{
+    //     max-width: 1020px;
+    // }
+    // .haedquart__item{
+    //     max-width: 223px;
+    // }
 }
 @media screen and(max-width:1050px) {
     .our__title{

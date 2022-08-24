@@ -1,6 +1,7 @@
-html{
+html {
     scroll-behavior: smooth;
 }
+
 .option__section {
     margin: 0;
     padding: 0 85px;
@@ -28,7 +29,7 @@ html{
 .left__list--item {
     width: 255px;
     border-bottom: 1px solid #83888f;
-    opacity: 0.5;
+    opacity: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,6 +45,7 @@ html{
 
 .item__btn {
     // width: 255px;
+    // padding-left: 20px;
     background-color: transparent;
     border: none;
     font-family: 'Fraunces';
@@ -51,12 +53,13 @@ html{
     font-size: 24px;
     line-height: 32px;
     color: #333D4B;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 span {
+    padding-left: 20px;
     margin-left: 0;
-    margin-right: 28px;
+    margin-right: 20px;
     font-family: 'Fraunces';
     font-weight: 900;
     font-size: 24px;
@@ -66,60 +69,74 @@ span {
 
 .inner__content--right {
     margin: 0;
-    padding: 20px 0 0 0;
+    padding: 0px 0 0 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
 }
 
-.drop__img {
-    // position: relative;
-    transform: rotateX(180deg);
-}
-
-// ///////////////////////////////
-.dropdown {
+.dropdown-list {
+    padding: 21px 0 0 0;
     margin: 0;
-    padding: 0;
-    width: 790px;
-    position: relative;
-    display: inline-block;
-}
-.drop__list {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    z-index: 1;
-    top: 70px;
-    left: 3px;
-    width: 790px;
-    display: none;
-    justify-content: space-between;
-    align-items: center;
+    margin-bottom: 80px;
     list-style: none;
 }
 
-.drop__item {
+.drop__list {
+    margin: 0;
+    padding: 0;
+    width: 730px;
+    display: flex;
+    display: none;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style-type: none;
+}
+.drop__item + .drop__item{
+    margin-top: 88px;
+}
+.drop__list--item {
+    margin: 56px 0 0 0;
     padding: 32px 28px 84px 28px;
-    width: 250px;
+    width: 228px;
+    height: 250px;
     background: #F4F1EB;
     border-radius: 8px;
-    transition: all 0.5s ease-in-out;
-}
-
-.drop__list .drop__item:hover {
-    background: #FDD6BA;
-}
-
-.drop__list .drop__item:active {
-    background: #0E8784;
-    color: #fff;
-}
-
-.drop__title {
     font-family: 'Fraunces';
     font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888F;
+}
+.drop__list--item:hover{
+    background: #0E8784;
+    color:#FFFFFF;
+}
+
+.drop__heading {
+    margin: 0;
+    padding: 0;
+    width: 730px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888F;
+}
+.drop__polygon{
+    text-align: end;
+}
+.drop{
+    transform: rotateX(180deg);
+}
+.drop__title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fraunces';
     font-weight: 900;
     font-size: 24px;
     line-height: 32px;
@@ -127,13 +144,15 @@ span {
 }
 
 .drop__text {
-    font-family: 'Barlow';
-    font-style: normal;
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: #333D4B;
 }
+
 .bottom__plan {
     position: relative;
     margin: 0 0 150px 0;
@@ -167,18 +186,31 @@ blockquote {
     line-height: 40px;
     color: #FFFFFF;
 }
-.bottom__link{
+
+.bottom__link {
     position: absolute;
     top: 266px;
     left: 513px;
-    padding: 0;text-decoration: none;
+    padding: 0;
+    text-decoration: none;
     @include btn;
     background-color: #0E8784;
     transition: all 0.4s ease-in-out;
 }
-.bottom__link:hover{
+
+.bottom__link:hover {
     background-color: #66d2cf;
 }
-.bottom__link:active{
+
+.bottom__link:active {
     background-color: #e2dedb;
 }
+
+.item__btn:hover {
+    background-color: #FDD6BA;
+    ;
+}
+
+.active .drop:hover {
+    background-color: #ccc;
+  }
